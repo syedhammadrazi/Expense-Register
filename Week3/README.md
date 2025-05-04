@@ -1,2 +1,2 @@
-# Week 2
-Connected frontend HTML/JS to Flask backend using WebSockets.
+# Week 3
+Created a basic expense entry web app.
