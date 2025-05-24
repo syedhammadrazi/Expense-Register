@@ -33,8 +33,8 @@ def index():
 
 # --- WebSocket Events ---
 @socketio.on('connect')
-def handle_connect(sid):
-    print(f'Client connected: {sid}')
+def handle_connect():
+    print(f'Client connected')
 
     conn = open_db()
     expenses = conn.execute('SELECT id, description, amount, created_at FROM expenses ORDER BY id DESC').fetchall()
